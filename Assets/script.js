@@ -38,8 +38,22 @@ let questions = [{
     choiceC: "CS Lewis",
     choiceD: "Give me a break, man!",
     correct: "B"
-}];
-
+},{
+    question: "Why do developers learn JavaScript?",
+    choiceA: "It allows us to implement complex features",
+    choiceB: "They want to be driven mad",
+    choiceC: "It's the main langauge of Twitter",
+    choiceD: "Do not click this one",
+    correct: "A"
+},{
+    question: "What is the most popular scripting language?",
+    choiceA: "JavaScript",
+    choiceB: "Python",
+    choiceC: "C++",
+    choiceD: "Klingon",
+    correct: "A"
+}
+]
 console.log(questions);
 
 
@@ -96,7 +110,7 @@ function checkAnswer(answer) {
         questionRender();
     }else{
         clearInterval(timer);
-        scoreRender(); //Take to High Score Page
+        endGame(); //Take to High Score Page
     };
 }
 
@@ -115,13 +129,19 @@ function counterRender(){
     }
 }
 
+//Render Score
+function scoreRender() {
+    scoreContainer.style.display = "block";
+    let scoreCount = score;
+}
+
 //Create a function to end the quiz
     //Hide question element
     //Unhide the end of game/end of quiz element
     //Unhide your final score element, form, submit button
-function scoreRender() {
-    scoreContainer.style.display = "block";
-    let scoreCount = score;
+function endGame() {
+    //hide quiz id
+    // unhide score-container id
 }
 
 //Saving Highscores
