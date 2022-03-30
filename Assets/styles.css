@@ -1,0 +1,74 @@
+
+:root {
+    background-color: rgb(61, 61, 61);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* Import Arcarde-themed font here */
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    color: white;
+    margin-bottom: 4rem;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 200px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#start-screen {
+
+}
+
+#quiz {
+    
+}
+
+#score-container {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#question-title {
+    font-size: larger;
+    text-align: center;
+}
+
+#question {
+    font-size: large;
+    font-weight: bold;
+}

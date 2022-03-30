@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Coding Quiz</title>
+    <link rel="stylesheet" href="./Assets/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-items">
+        </div>
+    </header>
+
+<div class="container">
+    <div id="start-screen" class="flex-column">
+        <h1>Lets Get Ready to Play</h1>
+        <br>
+        <button id="start-quiz" class="btn">Play</button>
+        <button id='high-score' class="btn">View High Scores</button>
+        <br>
+        <p>Rules of the Game: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur explicabo beatae neque. Optio quaerat nulla in minima omnis vero corporis tempore, sit aliquid aliquam delectus vel mollitia accusantium unde.</p>
+    </div>
+
+
+<div id="quiz" class="hidden">
+    <h2 id="question-title">Question</h2>
+    <p id="question"></p>
+    <br>
+    <div id="choices">
+        <div class="answer" id="A" onclick="checkAnswer('A')">A</div>
+        <div class="answer" id="B" onclick="checkAnswer('B')">B</div>
+        <div class="answer" id="C" onclick="checkAnswer('C')">C</div>
+        <div class="answer" id="D" onclick="checkAnswer('D')">D</div>
+    </div>
+    <div id="timer">
+        <div id="time-count">X</div>
+        <div id="timeGauge"></div>
+    </div>
+
+
+<div id="score-container">High Score</div>
+
+</div>
+    
+
+    
+
+
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
+
+<!-- 
+    1. Start Screen with text, start button, rules
+    2. Question Screen with text, button, timer, feedback based on answer (flashes on the screen)
+    3. End of game shows final score, form to enter initials, submit and clear buttons
+    4. High Score Page -->
